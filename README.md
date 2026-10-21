@@ -4,10 +4,10 @@ Live: **https://semmamebuke.github.io/bujar-tuning/**
 
 Statischer Vite-Build der Website von Bujar Automobile in Kreuztal.
 
-- Kaltstart mit anschließender BA-PERFORMANCE-Einblendung, ohne Überspringen-Button.
+- BA-Performance-Logo in kompakter Größe in der Navbar sowie im Kaltstart und der anschließenden Markeneinblendung, ohne Überspringen-Button.
 - Stufe 1, 2 und 3; Stufe 2 und 3 beziehen Umbauten ein.
 - Interaktives Audi-RS3-Beispiel mit umschaltbaren PS-/Nm-Kurven und Anfrageübergabe.
-- 23 unabhängige Zusatzoptionen in aufklappbaren Gruppen, ohne Preise.
+- 21 unabhängige Zusatzoptionen in aufklappbaren Gruppen, ohne Preise. Pops & Bangs wird nach Kundenwunsch abgestimmt; Sportmodus und Klimataste sind Beispiele für die Aktivierung, sofern fahrzeugspezifisch möglich.
 - Häufige Fragen, Standortkarte mit Scan-Kreuz, Abschnittsvideos und Footer-Film.
 - Anfrageformular mit lokaler Fahrzeugschein-Vorschau.
 
