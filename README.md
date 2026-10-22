@@ -9,6 +9,7 @@ Statischer Vite-Build der Website von Bujar Automobile in Kreuztal.
 - Interaktives Audi-RS3-Beispiel mit umschaltbaren PS-/Nm-Kurven und Anfrageübergabe.
 - 21 unabhängige Zusatzoptionen in aufklappbaren Gruppen, ohne Preise. Pops & Bangs wird nach Kundenwunsch abgestimmt; Sportmodus und Klimataste sind Beispiele für die Aktivierung, sofern fahrzeugspezifisch möglich.
 - Häufige Fragen, Standortkarte mit Scan-Kreuz, Abschnittsvideos und Footer-Film.
+- Chip-Video mit BA-Performance-Logo und passendem Vorschaubild; dezenter Graufilter, lautlose Wiedergabe und Pause außerhalb des sichtbaren Bereichs.
 - Anfrageformular mit lokaler Fahrzeugschein-Vorschau.
 
 ## E-Mail-Versand
