@@ -1,0 +1,46 @@
+// Deutsche Inhaltsstruktur der Framer-Unterseiten, als Gestaltungsvorlage.
+// Keine verbindlichen Rechtstexte für Bujar Automobile.
+export const legalPages = {
+  terms: {
+    title: "Bedingungen",
+    intro: "Diese Seite stellt die Bedingungen-Unterseite der ursprünglichen Gestaltungsvorlage wieder her. Die folgenden Texte sind redaktionelle Platzhalter und keine vereinbarten Geschäftsbedingungen von Bujar Automobile.",
+    sections: [
+      ["1. Leistungen", "Die Vorlage umfasst Wartung, Reparatur, Fahrzeugpflege, Prüfungen und Upgrades. Welche Leistungen tatsächlich angeboten werden, wird für den Betrieb und das jeweilige Fahrzeug gesondert abgestimmt."],
+      ["2. Terminanfragen", "Eine Anfrage ist noch keine bestätigte Buchung. Angaben zu Person, Fahrzeug und Anliegen bilden die Grundlage für die persönliche Abstimmung eines Termins."],
+      ["3. Fahrzeugprüfung & Kostenschätzung", "Erste Einschätzungen hängen von den verfügbaren Informationen ab. Eine Prüfung des Fahrzeugs kann weitere Arbeiten oder benötigte Teile sichtbar machen. Die tatsächlichen Abläufe und Freigaben sind noch festzulegen."],
+      ["4. Mitwirkung der Kunden", "Dieser Vorlagenabschnitt behandelt korrekte Kontakt- und Fahrzeugangaben, bekannte Schäden, erforderliche Unterlagen, Fahrzeugschlüssel und persönliche Gegenstände im Fahrzeug."],
+      ["5. Ersatzteile", "Art, Verfügbarkeit und Auswahl von Ersatzteilen werden im konkreten Auftrag besprochen. Dieser Platzhalter enthält keine Festlegung auf bestimmte Teile oder Hersteller."],
+      ["6. Bearbeitungszeiten", "Der zeitliche Rahmen richtet sich nach dem Fahrzeug, den Arbeiten und der Verfügbarkeit benötigter Teile. Konkrete Zusagen gehören in die jeweilige Termin- und Auftragsabstimmung."],
+      ["7. Zahlung", "Hier können später die vom Betrieb bestätigten Zahlungsarten, Fälligkeiten und sonstigen Zahlungsbedingungen stehen. Die Vorlage legt diese noch nicht fest."],
+      ["8. Absage & Terminänderung", "Dieser Abschnitt ist für die tatsächlichen Regeln bei Absagen oder Terminänderungen vorgesehen. Es werden keine Stornoentgelte oder sonstigen Verpflichtungen festgelegt."],
+      ["9. Individuelle Umbauten", "Die Vorlage enthält einen Bereich für Upgrades und individuelle Arbeiten. Ob und welche Umbauten angeboten werden, muss vor einem Auftrag geklärt werden."],
+      ["10. Gewährleistung & Garantien", "Hier ist Platz für zutreffende Informationen zum konkreten Auftrag und zu eingesetzten Teilen. Aus diesem Vorlagentext ergibt sich keine zusätzliche Garantiezusage."],
+      ["11. Haftung", "Die ursprüngliche Seite enthält einen Haftungsabschnitt. Für den späteren öffentlichen Auftritt muss dieser mit passenden, geprüften Angaben ersetzt werden; dieser Platzhalter begrenzt keine Rechte."],
+      ["12. Nutzung der Website", "Dieser Abschnitt ist für Regeln zur Nutzung der Website vorgesehen, beispielsweise zum Umgang mit falschen Angaben, missbräuchlichen Anfragen und technischen Eingriffen."],
+      ["13. Inhalte & Urheberrechte", "Texte, Fotos, Schriften und Gestaltungselemente unterliegen den jeweiligen Rechten. Die Einbindung der ursprünglichen Vorlagenmedien ersetzt keine Prüfung ihrer Nutzungsbedingungen."],
+      ["14. Datenschutz", "Die Datenschutz-Unterseite bleibt als eigene Seite erhalten. Angaben zum späteren Betrieb werden dort gesondert ergänzt."],
+      ["15. Änderungen", "Hier können später Hinweise zum Stand und zur Aktualisierung der tatsächlichen Bedingungen stehen. Die vorliegende Seite dient der Gestaltung."],
+      ["16. Anwendbares Recht", "Dieser Abschnitt der Vorlage ist für eine spätere, zum Betrieb passende Ausarbeitung vorgesehen. Es wird kein Gerichtsstand vereinbart."],
+      ["17. Kontakt", "Für Fragen zum Fahrzeug oder zur Terminabstimmung: Bujar Automobile, Johannespfad 48, 57223 Kreuztal. Telefon: 0178 9882443. E-Mail: info@bujarautomobile.de."],
+    ],
+  },
+  privacy: {
+    title: "Datenschutz",
+    intro: "Diese Unterseite ist als deutsche Gestaltungsvorlage wiederhergestellt. Sie ist noch keine vollständige Datenschutzerklärung für den öffentlichen Betrieb. Die Struktur der ursprünglichen Seite bleibt erhalten.",
+    sections: [
+      ["1. Angaben in Ihrer Anfrage", "Im Formular werden Name, Telefonnummer und das gewählte Anliegen verarbeitet, um einen Nachrichtentext vorzubereiten. Das Formular selbst übermittelt diese Angaben nicht an einen eigenen Website-Server."],
+      ["2. Verwendung der Angaben", "Die Eingaben dienen hier zur Erstellung Ihrer Nachricht. Erst wenn Sie sie in WhatsApp oder Ihrem E-Mail-Programm selbst senden, wird daraus eine Nachricht an den Betrieb."],
+      ["3. Kommunikation", "Sie können Bujar Automobile telefonisch, per E-Mail oder über den vorbereiteten WhatsApp-Nachrichtentext kontaktieren. Die spätere Bearbeitung eingehender Nachrichten durch den Betrieb ist gesondert zu beschreiben."],
+      ["4. Cookies & Browserspeicher", "Die Formularfunktion legt die Eingaben weder in Cookies noch im lokalen Browserspeicher ab. Angaben zur Hosting-Plattform und ihren Zugangsfunktionen müssen für eine öffentliche Veröffentlichung ergänzt werden."],
+      ["5. Externe Dienste", "WhatsApp, Ihr E-Mail-Anbieter und Google Maps sind eigenständige Dienste. Die eingebettete Google-Karte wird erst nach dem Klick auf „Google-Karte laden“ geladen. Dabei stellt der Browser eine Verbindung zu Google her."],
+      ["6. Zahlungsdaten", "Diese Website enthält derzeit keine Online-Zahlungsfunktion. Ein entsprechender Abschnitt kann später ergänzt werden, falls eine solche Funktion eingerichtet wird."],
+      ["7. Technischer Betrieb", "Die Seite wird über die bestehende Sites-Vorschau bereitgestellt. Die konkreten Angaben zu Hosting, technischen Protokollen und Verantwortlichkeiten sind vor einer öffentlichen Veröffentlichung zu vervollständigen."],
+      ["8. Aufbewahrung", "Formulareingaben bleiben nur im Zustand der geöffneten Seite und werden beim Neuladen zurückgesetzt. Aufbewahrung und Löschung tatsächlich versendeter Anfragen beim Betrieb oder bei externen Diensten sind davon getrennt zu beschreiben."],
+      ["9. Verlinkte Websites", "Links können zu externen Diensten wie Google Maps und WhatsApp führen. Für deren Verarbeitung gelten die Informationen der jeweiligen Anbieter."],
+      ["10. Datenschutzrechte", "Hier sind die für den Betrieb zutreffenden Informationen zu Auskunft, Berichtigung, Löschung, Widerspruch, Widerruf und Beschwerdemöglichkeiten zu ergänzen."],
+      ["11. Minderjährige", "Dieser Abschnitt der ursprünglichen Vorlage bleibt für eine spätere, zum tatsächlichen Angebot passende Ausarbeitung erhalten."],
+      ["12. Änderungen", "Bei Änderungen an Formularen, Hosting oder eingebundenen Diensten müssen auch die zugehörigen Datenschutzhinweise aktualisiert werden."],
+      ["13. Kontakt", "Vorhandene Kontaktdaten des Betriebs: Bujar Automobile, Johannespfad 48, 57223 Kreuztal. Telefon: 0178 9882443. E-Mail: info@bujarautomobile.de. Die vollständigen Angaben zum datenschutzrechtlich Verantwortlichen sind noch zu ergänzen."],
+    ],
+  },
+};
