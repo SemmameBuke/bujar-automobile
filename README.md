@@ -8,12 +8,12 @@ Die ursprüngliche GarageSix-Struktur ist auf ausdrücklichen Wunsch wiederherge
 
 ## GitHub Pages
 
-Repository: https://github.com/SemmameBuke/bujar-tuning
+Repository: https://github.com/SemmameBuke/bujar-automobile
 
-Vorgesehene Adresse: https://semmamebuke.github.io/bujar-tuning/
+GitHub-Pages-Adresse: https://semmamebuke.github.io/bujar-automobile/
 
 - `main` enthält weiterhin das bisherige Tuning-Konzept.
-- `werkstatt-website` enthält den bearbeitbaren Quellcode dieser vollständigen Werkstatt-Website.
+- `werkstatt-website` ist der Standardbranch und enthält den bearbeitbaren Quellcode dieser vollständigen Werkstatt-Website.
 - `gh-pages` enthält ausschließlich den fertigen Produktionsbuild. GitHub Pages verwendet diesen Branch mit dem Ordner `/`.
 
 Für Aktualisierungen im Branch `werkstatt-website` zuerst `npm ci` und `npm run build:pages` ausführen. Den Inhalt von `dist/` einschließlich `.nojekyll` in den Branch `gh-pages` übernehmen, committen und pushen. Quellcode-Änderungen ebenfalls in `werkstatt-website` committen und pushen. Der Build berücksichtigt das Repository-Unterverzeichnis bei Bildern, Schriften, Navigation und Unterseiten. Der normale Build ohne `:pages` bleibt für eine eigene Domain geeignet.
