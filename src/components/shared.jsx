@@ -19,6 +19,7 @@ export function SectionHeading({
   label,
   children,
   description,
+  action,
   className = "",
 }) {
   return (
@@ -26,6 +27,7 @@ export function SectionHeading({
       <span className="eyebrow">{label}</span>
       <h2>{children}</h2>
       {description && <p>{description}</p>}
+      {action}
     </header>
   );
 }

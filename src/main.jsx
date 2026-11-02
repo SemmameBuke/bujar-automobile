@@ -30,22 +30,20 @@ function App() {
       <a className="skip-link" href={isHome ? "#services" : "#page-content"}>
         Zum Inhalt springen
       </a>
-      <Header />
+      <div className={isHome ? "" : "subpage-header"}><Header /></div>
       <main>
-        <Hero />
         {isHome ? <>
+        <Hero />
         <VideoIntro />
         <Services />
         <Process />
         <ServiceOverview />
         <Pricing />
-        </> : <Subpage page={page} />}
-        {(isHome || page) && <>
         <Testimonials />
         <Team />
         <FAQ />
-        </>}
         <Contact />
+        </> : <Subpage page={page} />}
       </main>
       <Footer />
     </>

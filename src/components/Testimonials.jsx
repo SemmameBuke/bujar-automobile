@@ -1,56 +1,60 @@
 import React from "react";
-import { asset, reviewers, reviewQuote } from "../data/content";
+import { googleReviews, reviews } from "../data/content";
 import { SectionHeading } from "./shared";
-function Review({ person }) {
-  const [name, role, img] = person;
+function Review({ review, duplicate = false }) {
+  const { name, initials, rating, quote, url, excerpt } = review;
   return (
     <figure className="review-card">
-      <div className="stars" aria-label="5 von 5 Sternen – Beispielbewertung">
-        ★ ★ ★ ★ ★
+      <div className="stars" role="img" aria-label={`${rating} von 5 Sternen`}>
+        <span aria-hidden="true">{"★ ".repeat(rating).trim()}</span>
       </div>
-      <blockquote>{reviewQuote}</blockquote>
+      <blockquote cite={url}>„{quote}“</blockquote>
       <figcaption>
-        <img src={asset(img)} alt="" loading="lazy" />
+        <span className="review-avatar" aria-hidden="true">{initials}</span>
         <div>
           <strong>{name}</strong>
-          <span>{role}</span>
+          <span>Google-Rezension{excerpt ? " · Auszug" : ""}</span>
         </div>
       </figcaption>
+      <a className="review-source" href={url} target="_blank" rel="noopener noreferrer"
+        tabIndex={duplicate ? -1 : undefined}
+        aria-label={`Rezension von ${name} auf Google lesen (öffnet in einem neuen Tab)`}>
+        Auf Google lesen <span aria-hidden="true">↗</span>
+      </a>
     </figure>
   );
 }
 export default function Testimonials() {
-  const row1 = [
-      reviewers[0],
-      reviewers[1],
-      reviewers[1],
-      reviewers[2],
-      reviewers[3],
-    ],
-    row2 = [reviewers[1], reviewers[1], reviewers[1], reviewers[4]];
+  const rows = [reviews.slice(0, 3), reviews.slice(3)];
   return (
     <section className="testimonials">
       <SectionHeading
-        label="Kundenstimmen · Vorlagenbeispiele"
-        description="Dieser Bereich bleibt für echte Kundenstimmen erhalten. Die folgenden Personen und Aussagen stammen aus der Gestaltungsvorlage und sind keine Bewertungen von Bujar Automobile."
+        label="Kundenstimmen"
+        description="Persönliche Erfahrungen mit Bujar Automobile in Kreuztal. Eine Auswahl echter Google-Rezensionen – teilweise als kurzer Auszug."
       >
         Vertrauen, das bleibt.
         <br />
         Erfahrungen, <span>die zählen.</span>
       </SectionHeading>
+      <div className="review-summary">
+        <div>
+          <strong>{googleReviews.rating} / 5</strong>
+          <span>aus {googleReviews.count} Google-Bewertungen · Stand: {googleReviews.checkedAt}</span>
+        </div>
+        <a href={googleReviews.url} target="_blank" rel="noopener noreferrer">
+          Alle Google-Bewertungen <span aria-hidden="true">↗</span>
+        </a>
+      </div>
       <div className="review-marquee">
-        {[row1, row2].map((row, i) => (
+        {rows.map((row, i) => (
           <div className={`review-lane lane-${i}`} key={i}>
-            <div className="review-set">
-              {row.map((p, j) => (
-                <Review person={p} key={j} />
-              ))}
-            </div>
-            <div className="review-set" aria-hidden="true">
-              {row.map((p, j) => (
-                <Review person={p} key={j} />
-              ))}
-            </div>
+            {[0, 1, 2, 3].map((copy) => (
+              <div className="review-set" key={copy} aria-hidden={copy > 0 ? true : undefined}>
+                {row.map((review) => (
+                  <Review review={review} key={review.name} duplicate={copy > 0} />
+                ))}
+              </div>
+            ))}
           </div>
         ))}
       </div>

@@ -18,26 +18,74 @@ export const mechanicalServices = [
   ["Elektrische Diagnose", "Elektrischen Störungen und Warnmeldungen auf den Grund gehen.", "FE5JyWx9yzcR4r9fpTGh3eKK7RA.png"],
 ];
 export const processSteps = [
-  ["Anfrage", "Termin anfragen", "Erzählen Sie uns, was bei Ihrem Fahrzeug ansteht. Wartung, Reifen oder ein konkretes Problem: Ein kurzer Anruf oder eine Nachricht ist der erste Schritt. Den Termin stimmen Sie persönlich mit uns ab.", "MamUsvVkllZI4ucuNSUMNTzWFk.jpg"],
-  ["Prüfung", "Das Fahrzeug ansehen", "Was ist Ihnen aufgefallen? Gemeinsam besprechen wir das Anliegen und welche Prüfung sinnvoll ist. So lässt sich der nächste Schritt für Ihr Fahrzeug klären.", "vM2WraLU93YBYWtTElCmgAMRQ.jpg"],
-  ["Werkstatt", "Arbeiten abstimmen", "Auf Basis des Fahrzeugzustands sprechen wir über die erforderlichen Arbeiten. Umfang, Fragen zu Teilen und der zeitliche Rahmen gehören ins persönliche Gespräch.", "bwxO6O7UHCMh9GJBCs6fWKRNrA.jpg"],
-  ["Abholung", "Weiter geht die Fahrt", "Zur Abholung können offene Fragen zu den durchgeführten Arbeiten und zur weiteren Wartung besprochen werden. Für Ihre nächste Fahrt und Ihren Alltag mit dem Auto.", "N7fAB2eBT8UQ77lU0R91g6GN0o.jpg"],
+  ["Anfrage", "Termin anfragen", "Erzählen Sie uns, was bei Ihrem Fahrzeug ansteht. Wartung, Reifen oder ein konkretes Problem: Ein kurzer Anruf oder eine Nachricht ist der erste Schritt. Den Termin stimmen Sie persönlich mit uns ab.", "bujar-werkzeuge-detail.png", {
+    title: "Ihre Werkstatt in Kreuztal",
+    text: "Wartung, Inspektion oder Reifenwechsel: Fragen Sie Ihren Termin bei Bujar Automobile direkt und persönlich an.",
+    alt: "Werkzeuge und Werkbank mit Bujar-Automobile-Schriftzug",
+  }],
+  ["Prüfung", "Das Fahrzeug ansehen", "Was ist Ihnen aufgefallen? Gemeinsam besprechen wir das Anliegen und welche Prüfung sinnvoll ist. So lässt sich der nächste Schritt für Ihr Fahrzeug klären.", "bujar-werkstatt-klassiker.webp", {
+    title: "Fahrzeugdiagnose mit Überblick",
+    text: "Warnleuchte oder ungewohntes Geräusch? Gemeinsam klären wir, welche Diagnose für Ihr Fahrzeug sinnvoll ist.",
+    alt: "Schwarzer Ford Mustang in einer Werkstatt mit Bujar-Automobile-Schriftzug",
+  }],
+  ["Werkstatt", "Arbeiten abstimmen", "Auf Basis des Fahrzeugzustands sprechen wir über die erforderlichen Arbeiten. Umfang, Fragen zu Teilen und der zeitliche Rahmen gehören ins persönliche Gespräch.", "bujar-werkstatt-nacht.png", {
+    title: "Reparaturen klar abstimmen",
+    text: "Bei Bujar Automobile in Kreuztal besprechen wir nötige Reparaturen, passende Teile und den Umfang der Arbeiten.",
+    alt: "Schwarzer BMW vor einer Werkzeugwand und ein Fahrzeug auf der Hebebühne",
+  }],
+  ["Abholung", "Weiter geht die Fahrt", "Zur Abholung können offene Fragen zu den durchgeführten Arbeiten und zur weiteren Wartung besprochen werden. Für Ihre nächste Fahrt und Ihren Alltag mit dem Auto.", "bujar-auto-in-fahrt.png", {
+    title: "Gut betreut im Siegerland",
+    text: "Auch nach Ihrem Werkstattbesuch sind wir für Fragen zu Wartung, Reifen und dem nächsten Service ansprechbar.",
+    alt: "Schwarzer BMW bei einer Fahrt durch die Stadt am Abend",
+  }],
 ];
 export const upgrades = [
-  ["Motor-Tuning", 200, "6TuMnAGwpl01FHVpE2PM5lJril8.jpg"],
-  ["Abgasanlagen", 150, "1PqLTt7PER8sy3QN6wyYebWFk.jpg"],
-  ["Fahrwerk-Upgrades", 350, "msPmbUGZJoM52qmU3BLCUy7IvwM.jpg"],
-  ["Steuergerät-Optimierung", 100, "fo8o2acRKrIg0reoVP8QJfCg6xg.jpg"],
-  ["Turbo & Kompressor", 250, "6J46tnjL20G8sgFY8ebg54IXxc8.jpg"],
-  ["Sportbremsen", 300, "Q08HLZaMhMbF8hpYmuWRfZY1hA.jpg"],
+  ["Motor-Tuning", "6TuMnAGwpl01FHVpE2PM5lJril8.jpg"],
+  ["Abgasanlagen", "1PqLTt7PER8sy3QN6wyYebWFk.jpg"],
+  ["Fahrwerk-Upgrades", "msPmbUGZJoM52qmU3BLCUy7IvwM.jpg"],
+  ["Steuergerät-Optimierung", "fo8o2acRKrIg0reoVP8QJfCg6xg.jpg"],
+  ["Turbo & Kompressor", "6J46tnjL20G8sgFY8ebg54IXxc8.jpg"],
+  ["Sportbremsen", "Q08HLZaMhMbF8hpYmuWRfZY1hA.jpg"],
 ];
-export const reviewQuote = "„Viel Liebe zum Detail und ein hilfsbereiter Service. Mein Auto sah danach wieder großartig aus und fuhr sich wunderbar.“";
-export const reviewers = [
-  ["Sophia Bennett", "Beispielprofil aus der Vorlage", "NYBhXSBgekgoISTAppFloBspmCQ.png"],
-  ["Ava Mitchell", "Beispielprofil aus der Vorlage", "XDgkmeAgoy3Mp5bgWmGRVEWRtc.png"],
-  ["Noah Foster", "Beispielprofil aus der Vorlage", "oTuZG0GNVpKikJnd8h0o6W7RFU.jpg"],
-  ["Alex Carter", "Beispielprofil aus der Vorlage", "p3yej9W6XK0mPy3S4eiRnoapPQ.png"],
-  ["James Parker", "Beispielprofil aus der Vorlage", "WKFcwi7DNQPWMWOJbigVmUwQWs.jpg"],
+// Manually checked against the individual Google reviews on 2026-11-01.
+// Keep quotes verbatim; excerpt marks identify shortened reviews.
+export const googleReviews = {
+  url: "https://www.google.com/search?q=Bujar+Automobile%26Reifenservice&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c2-vMQwRYajBQpxLgQ6rEjSOPChriiG971GxQs8FSiOxXFgHJp2vxJ4aNJH8pMCN2maPg3Q%3D",
+  rating: "4,8",
+  count: 43,
+  checkedAt: "01.11.2026",
+};
+export const reviews = [
+  {
+    name: "Christoph Frisch", initials: "CF", rating: 5, excerpt: true,
+    quote: "Eine absolut empfehlenswerte kleine Werkstatt. Sehr freundlich und kompetente Mitarbeiter.",
+    url: "https://share.google/YGerN6QIYFTfxsyiT",
+  },
+  {
+    name: "Heike Schweisfurth", initials: "HS", rating: 5, excerpt: true,
+    quote: "Service hervorragend, super nette Leute. Komme gerne wieder. Vielen Dank.",
+    url: "https://share.google/8QSycte4tLuxqzsF3",
+  },
+  {
+    name: "Ute Schweisfurth", initials: "US", rating: 5, excerpt: false,
+    quote: "Super toller Service. Es wird alles möglich gemacht. Wenn ich ein Problem habe, anrufen und Lösungen erfolgt.",
+    url: "https://share.google/jeATm5nw9LcMqghFx",
+  },
+  {
+    name: "Albanita Haj", initials: "AH", rating: 5, excerpt: false,
+    quote: "Super Kompetentes Personal, sehr saubere Arbeit und das Preis-Leistungsverhältnis ist super!",
+    url: "https://share.google/v1icHCzGaHSYn6cdq",
+  },
+  {
+    name: "Robert Schwarz", initials: "RS", rating: 5, excerpt: false,
+    quote: "Kam zum Reifen wechseln. Wurde ruckzuck zu einem vernünftigen Preis erledigt. 1A.",
+    url: "https://share.google/xLgUSReSGhmqPCHE8",
+  },
+  {
+    name: "Wolfgang Tillessen", initials: "WT", rating: 5, excerpt: false,
+    quote: "Werkstatt schon mehrfach in Anspruch genommen. Sehr guter Service bei hoher Fachkompetenz.",
+    url: "https://share.google/BT8su6JW0JDFLsiH9",
+  },
 ];
 export const faqs = [
   ["Welche Leistungen bietet Bujar Automobile an?", "Bestätigte Schwerpunkte sind Wartung und Inspektion, Reifen und Räder sowie Diagnose und Reparatur. Weitere Leistungs- und Upgrade-Karten aus der Vorlage bleiben für die schrittweise Bearbeitung sichtbar; fragen Sie das konkrete Angebot bitte direkt an."],

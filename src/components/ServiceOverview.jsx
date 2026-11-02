@@ -1,86 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import React from "react";
 import { asset } from "../data/content";
 import { SectionHeading, Button, Reveal } from "./shared";
-const gallery = [
-  "vM2WraLU93YBYWtTElCmgAMRQ.jpg",
-  "do5mE5sch45uvLPFvuw3uoKqYk.jpg",
-  "do5mE5sch45uvLPFvuw3uoKqYk.jpg",
-  "rYAmdDDhk5Tmm6FalDWlMWEX80.jpg",
-  "MamUsvVkllZI4ucuNSUMNTzWFk.jpg",
-];
 export default function ServiceOverview() {
-  const [slide, setSlide] = useState(0),
-    [paused, setPaused] = useState(false);
-  useEffect(() => {
-    if (paused || matchMedia("(prefers-reduced-motion: reduce)").matches)
-      return;
-    const t = setInterval(
-      () => setSlide((s) => (s + 1) % gallery.length),
-      6000,
-    );
-    return () => clearInterval(t);
-  }, [paused]);
   return (
     <>
-      <section
-        className="overview"
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
-        onFocusCapture={() => setPaused(true)}
-        onBlurCapture={(e) => {
-          if (!e.currentTarget.contains(e.relatedTarget)) setPaused(false);
-        }}
-        aria-label="Leistungsübersicht"
-      >
-        <div className="overview-images">
-          {gallery.map((img, i) => (
-            <img
-              key={`${img}-${i}`}
-              className={slide === i ? "active" : ""}
-              src={asset(img)}
-              alt="Werkstattmotiv aus der Gestaltungsvorlage"
-              loading="lazy"
-            />
-          ))}
-        </div>
+      <section className="overview" aria-label="Leistungsübersicht">
+        <picture className="overview-images">
+          <source media="(max-width: 809px)" srcSet={asset("bujar-werkstatt-mobil.png")} />
+          <img src={asset("bujar-werkstatt-bmw.png")}
+            alt="Bujar Automobile in Kreuztal mit schwarzem BMW vor der Werkstatt" loading="lazy" />
+        </picture>
         <div className="overview-copy">
           <span className="eyebrow">Leistungen im Überblick</span>
           <h2>Werkstattservice</h2>
-          <p>
-            Wartung, Diagnose und Reparatur – für die nächste gute Fahrt.
-          </p>
+          <p>Wartung, Diagnose und Reparatur – für die nächste gute Fahrt.</p>
           <Button href="#mechanical">Leistungen entdecken</Button>
-        </div>
-        <div className="slideshow-controls">
-          <button
-            type="button"
-            aria-label="Vorheriges Werkstattbild"
-            onClick={() =>
-              setSlide((slide + gallery.length - 1) % gallery.length)
-            }
-          >
-            <ArrowLeft />
-          </button>
-          <div>
-            {gallery.map((_, i) => (
-              <button
-                type="button"
-                key={i}
-                className={slide === i ? "active" : ""}
-                aria-label={`Werkstattbild anzeigen ${i + 1}`}
-                aria-pressed={slide === i}
-                onClick={() => setSlide(i)}
-              />
-            ))}
-          </div>
-          <button
-            type="button"
-            aria-label="Nächstes Werkstattbild"
-            onClick={() => setSlide((slide + 1) % gallery.length)}
-          >
-            <ArrowRight />
-          </button>
         </div>
       </section>
       <section className="service-details" id="mechanical">
@@ -110,11 +44,17 @@ export default function ServiceOverview() {
                 </li>
               </ul>
             </div>
-            <img
-              src={asset("bwxO6O7UHCMh9GJBCs6fWKRNrA.jpg")}
-              alt="Werkstattmotiv mit Fahrzeugen"
-              loading="lazy"
-            />
+            <figure className="detail-visual">
+              <img
+                src={asset("bujar-werkstatt-rotes-akzentlicht.png")}
+                alt="Moderne Autowerkstatt mit rotem Akzentlicht und einem BMW auf der Hebebühne"
+                loading="lazy"
+              />
+              <figcaption className="image-glass-card">
+                <h3>Ihr Werkstattservice in Kreuztal</h3>
+                <p>Wartung, Inspektion und Fahrzeugdiagnose: Bei Bujar Automobile besprechen wir persönlich, was Ihr Auto braucht.</p>
+              </figcaption>
+            </figure>
           </article>
         </Reveal>
         <Reveal>
@@ -141,11 +81,17 @@ export default function ServiceOverview() {
                 ))}
               </ul>
             </div>
-            <img
-              src={asset("vM2WraLU93YBYWtTElCmgAMRQ.jpg")}
-              alt="Motiv zur Fahrzeugpflege"
-              loading="lazy"
-            />
+            <figure className="detail-visual">
+              <img
+                src={asset("bujar-werkstatt-klassiker.webp")}
+                alt="Schwarzer Ford Mustang in einer Werkstatt mit Bujar-Automobile-Schriftzug"
+                loading="lazy"
+              />
+              <figcaption className="image-glass-card">
+                <h3>Fahrzeugpflege mit Blick aufs Detail</h3>
+                <p>Fragen zur Pflege von Lack und Innenraum? Besprechen Sie mit Bujar Automobile in Kreuztal die Möglichkeiten für Ihr Fahrzeug.</p>
+              </figcaption>
+            </figure>
           </article>
         </Reveal>
       </section>

@@ -13,7 +13,7 @@ export default function Process() {
         Persönlicher <span>Service.</span>
       </SectionHeading>
       <div className="process-list">
-        {processSteps.map(([tag, title, text, img], i) => (
+        {processSteps.map(([tag, title, text, img, caption], i) => (
           <Reveal key={tag}>
             <article className={`process-card ${i % 2 ? "reverse" : ""}`}>
               <div className="process-copy">
@@ -25,12 +25,18 @@ export default function Process() {
                   <p>{text}</p>
                 </div>
               </div>
-              <img
-                className="process-photo"
-                src={asset(img)}
-                alt={title}
-                loading="lazy"
-              />
+              <figure className="process-visual">
+                <img
+                  className="process-photo"
+                  src={asset(img)}
+                  alt={caption.alt}
+                  loading="lazy"
+                />
+                <figcaption className="image-glass-card">
+                  <h4>{caption.title}</h4>
+                  <p>{caption.text}</p>
+                </figcaption>
+              </figure>
             </article>
           </Reveal>
         ))}
