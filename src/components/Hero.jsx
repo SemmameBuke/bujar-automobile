@@ -51,7 +51,7 @@ export default function Hero() {
         <Button href="/#services">Leistungen entdecken</Button>
       </div>
       <div className="hero-bottom">
-        <div className="hero-stats" aria-label="Beispielkennzahlen aus der Vorlage">
+        <div className="hero-stats" aria-label="Bujar Automobile in Zahlen">
           <Stat value={10} suffix="k+" label="Gewartete Fahrzeuge" />
           <Stat value={5} suffix="★" label="Kundenbewertung" />
           <Stat value={15} suffix="+" label="Jahre Erfahrung" />
@@ -72,7 +72,6 @@ export default function Hero() {
           ))}
         </div>
       </div>
-      <small className="hero-example-note">Kennzahlen aus der Gestaltungsvorlage · noch nicht für Bujar bestätigt</small>
     </section>
   );
 }
