@@ -30,20 +30,15 @@ function Stat({ value, suffix, label }) {
 export default function Hero() {
   return (
     <section id="hero" className="hero">
-      <div className="hero-top">
-        <p>
-          / WARTUNG
-          <br />/ REPARATUREN
-          <br />/ DIAGNOSE
-          <br />/ FAHRZEUGSERVICE
-        </p>
-        <p>
-          Persönlicher Service. \<br />
-          Gute Fahrt.
-          <br />Tag für Tag.
-        </p>
-      </div>
       <div className="hero-center">
+        <div className="hero-service-label">
+          <ul aria-label="Werkstattleistungen">
+            {["Wartung", "Reparaturen", "Diagnose", "Fahrzeugservice"].map(service => (
+              <li key={service}>{service}</li>
+            ))}
+          </ul>
+          <p>Persönlicher Service. Gute Fahrt. Tag für Tag.</p>
+        </div>
         <h1>
           Die Werkstatt Ihres <em>Vertrauens.</em>
         </h1>

@@ -2,10 +2,11 @@ import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import {
   asset,
+  business,
   workshopServices,
   mechanicalServices,
 } from "../data/content";
-import { SectionHeading, Carousel } from "./shared";
+import { SectionHeading } from "./shared";
 export default function Services() {
   return (
     <section id="services" className="services">
@@ -15,7 +16,7 @@ export default function Services() {
           <br />
           und <span>Reifenservice.</span>
         </SectionHeading>
-        <Carousel label="Unsere Schwerpunkte" className="photo-carousel">
+        <div className="service-focus"><div className="service-focus-cards">
           {workshopServices.map(([title, text, img]) => (
             <article className="photo-card" key={title}>
               <div className="photo-card-image">
@@ -30,26 +31,27 @@ export default function Services() {
               </a>
             </article>
           ))}
-        </Carousel>
+        </div><aside className="service-advice"><h3>Was fällt Ihnen am Auto auf?</h3><p>Sie müssen die Ursache nicht kennen. Beschreiben Sie uns, wann das Geräusch auftritt oder welche Warnleuchte leuchtet. Gemeinsam mit Bujar klären Sie den nächsten Schritt.</p><a href={business.phoneHref}>Bujar anrufen · {business.phone} ↗</a></aside></div>
       </div>
       <div className="service-group">
         <SectionHeading
           label="Werkstattservice"
           description="Hier finden Sie einzelne Arbeiten rund um Motor, Bremsen, Elektrik und Räder."
         >
-          Guter Service.
+          Von der Diagnose
           <br />
-          Bis ins <span>Detail.</span>
+          bis zur <span>Reparatur.</span>
         </SectionHeading>
-        <Carousel label="Werkstattleistungen" className="icon-carousel">
-          {mechanicalServices.map(([title, text, img]) => (
-            <a href="#booking" className="icon-card" key={title}>
-              <img src={asset(img)} alt="" loading="lazy" />
+        <div id="werkstattleistungen" className="workshop-grid">
+          {mechanicalServices.map(([title, text, Icon]) => (
+            <a href="#booking" className="workshop-card" key={title} aria-label={title + " anfragen"}>
+              <Icon size={30} strokeWidth={1.6} aria-hidden="true" />
               <h3>{title}</h3>
               <p>{text}</p>
+              <span className="workshop-action">Leistung anfragen <ArrowUpRight size={17} aria-hidden="true" /></span>
             </a>
           ))}
-        </Carousel>
+        </div>
       </div>
     </section>
   );

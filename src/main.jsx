@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import Header from "./components/Header";
-import Hero, { VideoIntro } from "./components/Hero";
+import Hero from "./components/Hero";
+import LocationBar from "./components/LocationBar";
 import Services from "./components/Services";
 import Process from "./components/Process";
 import ServiceOverview from "./components/ServiceOverview";
@@ -34,7 +35,8 @@ function App() {
       <main>
         {isHome ? <>
         <Hero />
-        <VideoIntro />
+        {/* VideoIntro hier wieder einbinden, sobald das Werkstattvideo vorliegt. */}
+        <LocationBar />
         <Services />
         <Process />
         <ServiceOverview />

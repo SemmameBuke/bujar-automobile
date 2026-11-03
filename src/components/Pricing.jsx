@@ -1,7 +1,10 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { asset, upgrades } from "../data/content";
-import { Button, SectionHeading, Carousel } from "./shared";
+import { Button, SectionHeading } from "./shared";
+
+const tuningUrl = "https://www.ba-performance.de/";
+
 export default function Pricing() {
   return (
     <section id="prices" className="pricing">
@@ -12,7 +15,7 @@ export default function Pricing() {
         action={
           <Button
             className="tuning-button"
-            href="https://www.ba-performance.de/"
+            href={tuningUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Zur Tuning-Seite von BA Performance (öffnet in einem neuen Tab)"
@@ -25,22 +28,22 @@ export default function Pricing() {
         <br />
         Ganz <span>Ihr Stil.</span>
       </SectionHeading>
-      <Carousel label="Fahrzeug-Upgrades" className="pricing-carousel">
+      <div className="upgrade-grid">
         {upgrades.map(([title, img]) => (
-          <a className="upgrade-card" key={title} href="#booking">
-            <div className="upgrade-image">
-              <img src={asset(img)} alt={title} loading="lazy" />
-              <div>
-                <h3>{title}</h3>
-              </div>
-            </div>
-            <span className="upgrade-link">
-              {title}
-              <ArrowUpRight size={20} />
-            </span>
+          <a
+            className="upgrade-card"
+            key={title}
+            href={tuningUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={title + " bei BA Performance (öffnet in einem neuen Tab)"}
+          >
+            <img src={asset(img)} alt="" loading="lazy" />
+            <h3>{title}</h3>
+            <ArrowUpRight size={18} aria-hidden="true" />
           </a>
         ))}
-      </Carousel>
+      </div>
     </section>
   );
 }

@@ -6,9 +6,8 @@ export default function ServiceOverview() {
     <>
       <section className="overview" aria-label="Leistungsübersicht">
         <picture className="overview-images">
-          <source media="(max-width: 809px)" srcSet={asset("bujar-werkstatt-mobil.png")} />
-          <img src={asset("bujar-werkstatt-bmw.png")}
-            alt="Bujar Automobile in Kreuztal mit schwarzem BMW vor der Werkstatt" loading="lazy" />
+          <img src={asset("bujar-werkstatt-winter.png")}
+            alt="Silberner BMW vor der verschneiten Werkstatt von Bujar Automobile in Kreuztal" loading="lazy" />
         </picture>
         <div className="overview-copy">
           <span className="eyebrow">Leistungen im Überblick</span>
@@ -67,7 +66,7 @@ export default function ServiceOverview() {
                 Zeit für den<br /><span>Räderwechsel?</span>
               </SectionHeading>
               <Button href="#booking">Reifenservice anfragen</Button>
-              <p className="care-teaser"><strong>Auch bei uns: Fahrzeugaufbereitung.</strong> Sie möchten Lack oder Innenraum auffrischen lassen? <a href="#booking">Aufbereitung anfragen</a></p>
+              <p className="care-teaser">Auf Wunsch bereiten wir auch den Innenraum und Lack Ihres Fahrzeugs auf. <a href="#booking">Details anfragen</a></p>
             </div>
             <figure className="detail-visual">
               <img

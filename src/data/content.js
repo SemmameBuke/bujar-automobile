@@ -1,3 +1,5 @@
+import { Wrench, Disc3, Droplet, Snowflake, CircleDot, Zap } from "lucide-react";
+
 // Vollständige Vorlage; nicht bestätigte Angebote bleiben als Beispiele erhalten.
 export const asset = (name) => `${import.meta.env.BASE_URL}assets/${name}`;
 export const business = { name: "Bujar Automobile", phone: "0178 9882443", phoneHref: "tel:+491789882443", whatsapp: "491789882443", email: "info@bujarautomobile.de", street: "Johannespfad 48", city: "57223 Kreuztal", maps: "https://www.google.com/maps/dir/?api=1&destination=Johannespfad+48%2C+57223+Kreuztal" };
@@ -5,15 +7,15 @@ export const intro = "Eine Warnleuchte im Cockpit, die nächste Inspektion oder 
 export const workshopServices = [
   ["Diagnose & Reparatur", "Leuchtet eine Warnlampe oder klingt Ihr Auto anders als sonst? Wir prüfen die Ursache und besprechen die Reparatur mit Ihnen.", "bujar-werkstatt-nacht.png"],
   ["Wartung & Inspektion", "Wir klären mit Ihnen, welche Wartungsarbeiten bei Ihrem Kilometerstand anstehen.", "bujar-werkzeuge-detail.png"],
-  ["Reifen & Räder", "Steht der saisonale Räderwechsel an? Vereinbaren Sie Ihren Termin für den Reifenservice in Kreuztal.", "bujar-werkstatt-bmw.png"],
+  ["Reifen & Räder", "Steht der saisonale Räderwechsel an? Vereinbaren Sie Ihren Termin für den Reifenservice in Kreuztal.", "bujar-reifenservice.png"],
 ];
 export const mechanicalServices = [
-  ["Motor & Reparatur", "Auffälligkeiten am Motor prüfen und notwendige Reparaturen besprechen.", "kNFiX9oidCwa1VAQ0ATUIeJNKU.webp"],
-  ["Bremsenservice", "Zustand der Bremsanlage prüfen und anstehende Arbeiten abstimmen.", "uJNcdfPDmbopJnfxtg285C14.png"],
-  ["Ölwechsel", "Motoröl und Filter als Teil der regelmäßigen Fahrzeugwartung.", "69qGO7o22uRPTWQUyVahpQwJ6w.png"],
-  ["Klima & Kühlung", "Klimaanlage und Kühlsystem im Blick behalten.", "R7cj1jZCs0ogcJMoirqlW970Mk.png"],
-  ["Reifen & Räder", "Reifenservice und Räderwechsel für die nächste Saison.", "wij9hAnUu39gfgL1B9d8vpdPBQ.png"],
-  ["Elektrische Diagnose", "Elektrischen Störungen und Warnmeldungen auf den Grund gehen.", "FE5JyWx9yzcR4r9fpTGh3eKK7RA.png"],
+  ["Motor & Reparatur", "Auffälligkeiten am Motor prüfen und notwendige Reparaturen besprechen.", Wrench],
+  ["Bremsenservice", "Zustand der Bremsanlage prüfen und anstehende Arbeiten abstimmen.", Disc3],
+  ["Ölwechsel", "Motoröl und Filter als Teil der regelmäßigen Fahrzeugwartung.", Droplet],
+  ["Klima & Kühlung", "Klimaanlage und Kühlsystem im Blick behalten.", Snowflake],
+  ["Reifen & Räder", "Reifenservice und Räderwechsel für die nächste Saison.", CircleDot],
+  ["Elektrische Diagnose", "Elektrischen Störungen und Warnmeldungen auf den Grund gehen.", Zap],
 ];
 export const processSteps = [
   ["Anfrage", "Termin anfragen", "Erzählen Sie uns, was bei Ihrem Fahrzeug ansteht. Wartung, Reifen oder ein konkretes Problem: Ein kurzer Anruf oder eine Nachricht ist der erste Schritt. Den Termin stimmen Sie persönlich mit uns ab.", "bujar-werkzeuge-detail.png", {
@@ -38,12 +40,12 @@ export const processSteps = [
   }],
 ];
 export const upgrades = [
-  ["Motor-Tuning", "6TuMnAGwpl01FHVpE2PM5lJril8.jpg"],
-  ["Abgasanlagen", "1PqLTt7PER8sy3QN6wyYebWFk.jpg"],
-  ["Fahrwerk-Upgrades", "msPmbUGZJoM52qmU3BLCUy7IvwM.jpg"],
-  ["Steuergerät-Optimierung", "fo8o2acRKrIg0reoVP8QJfCg6xg.jpg"],
-  ["Turbo & Kompressor", "6J46tnjL20G8sgFY8ebg54IXxc8.jpg"],
-  ["Sportbremsen", "Q08HLZaMhMbF8hpYmuWRfZY1hA.jpg"],
+  ["Motor-Tuning", "tuning-motor.jpg"],
+  ["Abgasanlagen", "tuning-abgas.jpg"],
+  ["Fahrwerk-Upgrades", "tuning-fahrwerk.jpg"],
+  ["Steuergerät-Optimierung", "tuning-steuergeraet.jpg"],
+  ["Turbo & Kompressor", "tuning-turbo.jpg"],
+  ["Sportbremsen", "tuning-bremsen.jpg"],
 ];
 // Manually checked against the individual Google reviews on 2026-11-01.
 // Keep quotes verbatim; excerpt marks identify shortened reviews.
