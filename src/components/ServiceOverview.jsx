@@ -61,25 +61,13 @@ export default function ServiceOverview() {
           <article className="detail-row detail-reverse">
             <div className="detail-copy">
               <SectionHeading
-                label="Fahrzeugpflege"
-                description="Der vollständige Pflegebereich der Vorlage bleibt als Grundlage für die nächsten Anpassungen erhalten."
+                label="Reifenservice"
+                description="Beim Wechsel zwischen Sommer- und Winterrädern lohnt sich ein Blick auf Profil und Zustand. Fragen Sie uns, ob Ihre Reifen für die nächste Saison bereit sind."
               >
-                Ihr Auto
-                <br />
-                zeigt <span>Glanz.</span>
+                Zeit für den<br /><span>Räderwechsel?</span>
               </SectionHeading>
-              <ul className="detail-list">
-                {[
-                  "Außen- & Innenaufbereitung",
-                  "Tiefenreinigung",
-                  "Lackaufbereitung",
-                  "Keramikversiegelung",
-                  "Premium-Fahrzeugwäsche",
-                  "Scheinwerferaufbereitung",
-                ].map((text) => (
-                  <li key={text}>{text}</li>
-                ))}
-              </ul>
+              <Button href="#booking">Reifenservice anfragen</Button>
+              <p className="care-teaser"><strong>Auch bei uns: Fahrzeugaufbereitung.</strong> Sie möchten Lack oder Innenraum auffrischen lassen? <a href="#booking">Aufbereitung anfragen</a></p>
             </div>
             <figure className="detail-visual">
               <img
@@ -88,8 +76,8 @@ export default function ServiceOverview() {
                 loading="lazy"
               />
               <figcaption className="image-glass-card">
-                <h3>Fahrzeugpflege mit Blick aufs Detail</h3>
-                <p>Fragen zur Pflege von Lack und Innenraum? Besprechen Sie mit Bujar Automobile in Kreuztal die Möglichkeiten für Ihr Fahrzeug.</p>
+                <h3>Reifenservice in Kreuztal</h3>
+                <p>Für die Terminabstimmung hilft uns eine kurze Angabe: Möchten Sie komplette Räder wechseln lassen oder brauchen Sie neue Reifen?</p>
               </figcaption>
             </figure>
           </article>

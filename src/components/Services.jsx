@@ -2,22 +2,21 @@ import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import {
   asset,
-  careServices,
+  workshopServices,
   mechanicalServices,
-  intro,
 } from "../data/content";
-import { SectionHeading, Carousel, Reveal } from "./shared";
+import { SectionHeading, Carousel } from "./shared";
 export default function Services() {
   return (
     <section id="services" className="services">
       <div className="service-group">
-        <SectionHeading label="Fahrzeugpflege · Vorlagenbereich" description="Die Bildkarten der ursprünglichen Vorlage sind wieder da. Welche Pflegeleistungen künftig angeboten werden, stimmen wir im nächsten Schritt ab.">
-          Ihr Fahrzeug
+        <SectionHeading label="Ihre Werkstatt in Kreuztal" description="Vom ersten Anzeichen eines Defekts bis zum planmäßigen Räderwechsel sind wir für Sie da.">
+          Reparatur, Wartung
           <br />
-          in <span>Bestform.</span>
+          und <span>Reifenservice.</span>
         </SectionHeading>
-        <Carousel label="Fahrzeugpflege" className="photo-carousel">
-          {careServices.map(([title, text, img]) => (
+        <Carousel label="Unsere Schwerpunkte" className="photo-carousel">
+          {workshopServices.map(([title, text, img]) => (
             <article className="photo-card" key={title}>
               <div className="photo-card-image">
                 <img src={asset(img)} alt={title} loading="lazy" />
@@ -36,7 +35,7 @@ export default function Services() {
       <div className="service-group">
         <SectionHeading
           label="Werkstattservice"
-          description="Wartung, Inspektion, Reifen und Reparaturen: Hier finden Sie die Leistungsbereiche der ursprünglichen Vorlage zur weiteren Abstimmung."
+          description="Hier finden Sie einzelne Arbeiten rund um Motor, Bremsen, Elektrik und Räder."
         >
           Guter Service.
           <br />
