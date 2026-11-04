@@ -3,14 +3,14 @@ import { Wrench, Disc3, Droplet, Snowflake, CircleDot, Zap } from "lucide-react"
 // Vollständige Vorlage; nicht bestätigte Angebote bleiben als Beispiele erhalten.
 export const asset = (name) => `${import.meta.env.BASE_URL}assets/${name}`;
 export const business = { name: "Bujar Automobile", phone: "0178 9882443", phoneHref: "tel:+491789882443", whatsapp: "491789882443", email: "info@bujarautomobile.de", street: "Johannespfad 48", city: "57223 Kreuztal", maps: "https://www.google.com/maps/dir/?api=1&destination=Johannespfad+48%2C+57223+Kreuztal" };
-export const intro = "Eine Warnleuchte im Cockpit, die nächste Inspektion oder der Wechsel auf Winterreifen? Bei Bujar Automobile in Kreuztal kümmern wir uns um Reparaturen, Wartung und Reifenservice.";
+export const intro = "Eine Warnleuchte im Cockpit, der nächste Fahrzeugservice oder der Wechsel auf Winterreifen? Bei Bujar Automobile in Kreuztal kümmern wir uns um Instandsetzungen, Wartung und Reifenservice.";
 export const workshopServices = [
-  ["Diagnose & Reparatur", "Leuchtet eine Warnlampe oder klingt Ihr Auto anders als sonst? Wir prüfen die Ursache und besprechen die Reparatur mit Ihnen.", "bujar-werkstatt-nacht.png"],
-  ["Wartung & Inspektion", "Wir klären mit Ihnen, welche Wartungsarbeiten bei Ihrem Kilometerstand anstehen.", "bujar-werkzeuge-detail.png"],
+  ["Diagnose & Instandsetzung", "Leuchtet eine Warnlampe oder klingt Ihr Auto anders als sonst? Wir prüfen die Ursache und besprechen die Instandsetzung mit Ihnen.", "bujar-werkstatt-nacht.png"],
+  ["Wartung & Fahrzeugservice", "Wir klären mit Ihnen, welche Wartungsarbeiten bei Ihrem Kilometerstand anstehen.", "bujar-werkzeuge-detail.png"],
   ["Reifen & Räder", "Steht der saisonale Räderwechsel an? Vereinbaren Sie Ihren Termin für den Reifenservice in Kreuztal.", "bujar-reifenservice.png"],
 ];
 export const mechanicalServices = [
-  ["Motor & Reparatur", "Auffälligkeiten am Motor prüfen und notwendige Reparaturen besprechen.", Wrench],
+  ["Motor & Instandsetzung", "Auffälligkeiten am Motor prüfen und notwendige Instandsetzungen besprechen.", Wrench],
   ["Bremsenservice", "Zustand der Bremsanlage prüfen und anstehende Arbeiten abstimmen.", Disc3],
   ["Ölwechsel", "Motoröl und Filter als Teil der regelmäßigen Fahrzeugwartung.", Droplet],
   ["Klima & Kühlung", "Klimaanlage und Kühlsystem im Blick behalten.", Snowflake],
@@ -20,7 +20,7 @@ export const mechanicalServices = [
 export const processSteps = [
   ["Anfrage", "Termin anfragen", "Erzählen Sie uns, was bei Ihrem Fahrzeug ansteht. Wartung, Reifen oder ein konkretes Problem: Ein kurzer Anruf oder eine Nachricht ist der erste Schritt. Den Termin stimmen Sie persönlich mit uns ab.", "bujar-werkzeuge-detail.png", {
     title: "Ihre Werkstatt in Kreuztal",
-    text: "Wartung, Inspektion oder Reifenwechsel: Fragen Sie Ihren Termin bei Bujar Automobile direkt und persönlich an.",
+    text: "Wartung, Fahrzeugservice oder Reifenwechsel: Fragen Sie Ihren Termin bei Bujar Automobile direkt und persönlich an.",
     alt: "Werkzeuge und Werkbank mit Bujar-Automobile-Schriftzug",
   }],
   ["Prüfung", "Das Fahrzeug ansehen", "Was ist Ihnen aufgefallen? Gemeinsam besprechen wir das Anliegen und welche Prüfung sinnvoll ist. So lässt sich der nächste Schritt für Ihr Fahrzeug klären.", "bujar-werkstatt-klassiker.webp", {
@@ -29,8 +29,8 @@ export const processSteps = [
     alt: "Schwarzer Ford Mustang in einer Werkstatt mit Bujar-Automobile-Schriftzug",
   }],
   ["Werkstatt", "Arbeiten abstimmen", "Auf Basis des Fahrzeugzustands sprechen wir über die erforderlichen Arbeiten. Umfang, Fragen zu Teilen und der zeitliche Rahmen gehören ins persönliche Gespräch.", "bujar-werkstatt-nacht.png", {
-    title: "Reparaturen klar abstimmen",
-    text: "Bei Bujar Automobile in Kreuztal besprechen wir nötige Reparaturen, passende Teile und den Umfang der Arbeiten.",
+    title: "Instandsetzungen klar abstimmen",
+    text: "Bei Bujar Automobile in Kreuztal besprechen wir nötige Instandsetzungen, passende Teile und den Umfang der Arbeiten.",
     alt: "Schwarzer BMW vor einer Werkzeugwand und ein Fahrzeug auf der Hebebühne",
   }],
   ["Abholung", "Weiter geht die Fahrt", "Zur Abholung können offene Fragen zu den durchgeführten Arbeiten und zur weiteren Wartung besprochen werden. Für Ihre nächste Fahrt und Ihren Alltag mit dem Auto.", "bujar-auto-in-fahrt.png", {
@@ -88,7 +88,7 @@ export const reviews = [
   },
 ];
 export const faqs = [
-  ["Welche Leistungen bietet Bujar Automobile an?", "Unsere Schwerpunkte sind Diagnose und Reparatur, Wartung und Inspektion sowie Reifenservice. Beschreiben Sie uns Ihr Anliegen, damit wir den passenden Termin mit Ihnen abstimmen können."],
+  ["Welche Leistungen bietet Bujar Automobile an?", "Unsere Schwerpunkte sind Diagnose und Instandsetzung, Wartung und Fahrzeugservice sowie Reifenservice. Beschreiben Sie uns Ihr Anliegen, damit wir den passenden Termin mit Ihnen abstimmen können."],
   ["Kann ich einen Termin online anfragen?", "Ja. Das Formular bereitet Ihre Anfrage vor. Sie prüfen den Text und senden ihn anschließend selbst per WhatsApp oder E-Mail. Ein Termin ist erst nach persönlicher Bestätigung vereinbart."],
   ["Kann ich mit meinem Fahrzeug zu Ihnen kommen?", "Nennen Sie uns Marke, Modell und Ihr Anliegen. Im direkten Gespräch klären Sie mit uns, welche Arbeiten für Ihr Fahrzeug möglich sind."],
   ["Wie lange dauert ein Werkstattbesuch?", "Das hängt vom Fahrzeug und den erforderlichen Arbeiten ab. Fragen Sie den zeitlichen Rahmen bitte bei der Terminabstimmung an."],

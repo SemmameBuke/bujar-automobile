@@ -39,7 +39,7 @@ export default function Contact() {
             <div className="form-row">
               <label>Gewünschter Service *<select name="service" defaultValue="" required>
                 <option value="" disabled>Bitte auswählen …</option>
-                <option>Diagnose & Reparatur</option><option>Wartung & Inspektion</option><option>Reifen & Räder</option><option>Andere Anfrage</option>
+                <option>Diagnose & Instandsetzung</option><option>Wartung & Fahrzeugservice</option><option>Reifen & Räder</option><option>Andere Anfrage</option>
               </select></label>
               <label>Automodell<input name="model" placeholder="z. B. VW Golf VII" maxLength={100} /></label>
             </div>
@@ -60,7 +60,7 @@ export default function Contact() {
           </form>
         </div>
         <div className="contact-info">
-          <div className="contact-meta"><div><small>UNSERE SCHWERPUNKTE</small><p>Wartung · Reifen · Reparatur</p></div><div><small>UNSER STANDORT</small><p>Kreuztal · Siegerland</p></div></div>
+          <div className="contact-meta"><div><small>UNSERE SCHWERPUNKTE</small><p>Wartung · Reifen · Instandsetzung</p></div><div><small>UNSER STANDORT</small><p>Kreuztal · Siegerland</p></div></div>
           <a href={business.maps} target="_blank" rel="noreferrer" className="contact-address"><MapPin size={24} />{business.street}, {business.city}</a>
           <div className="contact-direct">
             <a href={business.phoneHref}><Phone size={20} aria-hidden="true" />{business.phone}</a>

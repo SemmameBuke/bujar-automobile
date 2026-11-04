@@ -12,7 +12,7 @@ export default function Services() {
     <section id="services" className="services">
       <div className="service-group">
         <SectionHeading label="Ihre Werkstatt in Kreuztal" description="Vom ersten Anzeichen eines Defekts bis zum planmäßigen Räderwechsel sind wir für Sie da.">
-          Reparatur, Wartung
+          Instandsetzung, Wartung
           <br />
           und <span>Reifenservice.</span>
         </SectionHeading>
@@ -40,7 +40,7 @@ export default function Services() {
         >
           Von der Diagnose
           <br />
-          bis zur <span>Reparatur.</span>
+          bis zur <span>Instandsetzung.</span>
         </SectionHeading>
         <div id="werkstattleistungen" className="workshop-grid">
           {mechanicalServices.map(([title, text, Icon]) => (

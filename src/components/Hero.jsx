@@ -33,7 +33,7 @@ export default function Hero() {
       <div className="hero-center">
         <div className="hero-service-label">
           <ul aria-label="Werkstattleistungen">
-            {["Wartung", "Reparaturen", "Diagnose", "Fahrzeugservice"].map(service => (
+            {["Wartung", "Instandsetzung", "Diagnose", "Fahrzeugservice"].map(service => (
               <li key={service}>{service}</li>
             ))}
           </ul>
@@ -55,7 +55,7 @@ export default function Hero() {
           {[
             ["Ölwechsel", "kxfdK0IiIFTkYRJVvgEZ0U8w0sc.png"],
             ["Diagnose", "XQzWc1W99j0uThGAnSuRRbekc54.png"],
-            ["Reparaturen", "fnXCuOjcYv5fiagAlwYO7o9Xc80.png"],
+            ["Instandsetzung", "fnXCuOjcYv5fiagAlwYO7o9Xc80.png"],
             ["Upgrades", "ZJaBreEdIYTdikhgLjvvLDMFX48.png"],
           ].map(([label, img]) => (
             <a key={label} href={siteUrl("/#services")}>

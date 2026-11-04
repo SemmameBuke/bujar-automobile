@@ -12,7 +12,7 @@ export default function ServiceOverview() {
         <div className="overview-copy">
           <span className="eyebrow">Leistungen im Überblick</span>
           <h2>Werkstattservice</h2>
-          <p>Wartung, Diagnose und Reparatur – für die nächste gute Fahrt.</p>
+          <p>Wartung, Diagnose und Instandsetzung – für die nächste gute Fahrt.</p>
           <Button href="#mechanical">Leistungen entdecken</Button>
         </div>
       </section>
@@ -30,13 +30,13 @@ export default function ServiceOverview() {
               </SectionHeading>
               <ul className="detail-list">
                 <li>
-                  <strong>Wartung & Inspektion</strong> — Anstehende Wartungsarbeiten und den nächsten Service besprechen.
+                  <strong>Wartung & Fahrzeugservice</strong> — Anstehende Wartungsarbeiten und den nächsten Service besprechen.
                 </li>
                 <li>
                   <strong>Diagnose</strong> — Auffälligkeiten prüfen und der Ursache auf den Grund gehen.
                 </li>
                 <li>
-                  <strong>Reparatur</strong> — Erforderliche Arbeiten am Fahrzeug gemeinsam abstimmen.
+                  <strong>Instandsetzung</strong> — Erforderliche Arbeiten am Fahrzeug gemeinsam abstimmen.
                 </li>
                 <li>
                   <strong>Reifen & Räder</strong> — Fragen zu Reifen und dem saisonalen Räderwechsel klären.
@@ -51,7 +51,7 @@ export default function ServiceOverview() {
               />
               <figcaption className="image-glass-card">
                 <h3>Ihr Werkstattservice in Kreuztal</h3>
-                <p>Wartung, Inspektion und Fahrzeugdiagnose: Bei Bujar Automobile besprechen wir persönlich, was Ihr Auto braucht.</p>
+                <p>Wartung, Fahrzeugservice und Fahrzeugdiagnose: Bei Bujar Automobile besprechen wir persönlich, was Ihr Auto braucht.</p>
               </figcaption>
             </figure>
           </article>
