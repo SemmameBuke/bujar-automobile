@@ -2354,10 +2354,13 @@ main {
     display: grid;
     grid-template-rows: subgrid;
   }
-  .service-focus-cards .photo-card { grid-row: span 4; }
+  .service-focus-cards .photo-card {
+    grid-row: span 4;
+  }
+  .service-focus-cards { min-height: calc(clamp(400px, 34vw, 532px) + 70px); }
   .service-focus-cards .photo-card-image {
     grid-row: span 3;
-    min-height: clamp(400px, 34vw, 532px);
+    min-height: 0;
     height: auto;
   }
   .service-focus-cards .photo-card-image > img { position: absolute; inset: 0; }
